@@ -1,3 +1,4 @@
+[![GitHub license](https://img.shields.io/github/license/ishank09/data-512-homework_1)](https://github.com/ishank09/data-512-homework_1/blob/main/LICENSE)
 
 # Wikipedia Pageviews Data Collection
 This README provides an overview of the Python code for collecting Wikipedia pageviews data for a list of articles using the Wikimedia REST API. The code reads article information from a CSV file, calls the API for each article to retrieve pageviews data, and stores the results in JSON files. Additionally, it sorts the articles by name and handles error cases gracefully. The code presented also demonstrates the process of loading JSON data, converting it into pandas DataFrames, calculating averages, identifying articles with the highest and lowest pageviews, and creating various plots to visualize the data.
@@ -51,8 +52,8 @@ The code assumes the following folder structure:
 
 
 - src     ##Code directory (where this code is located)
-	- data_acquisition.ipynb
-	- data_analysis.ipynb
+	- data_acquisition.ipynb # Used to collect and store data in desired format.
+	- data_analysis.ipynb # Used to view and analyse data in desired format.
 - data ##Data directory (contains the CSV and JSON files)
   - thank_the_academy.AUG.2023.csv   # CSV file with article information
   - academy_monthly_mobile_201507-202312.json   # JSON file with mobile data
