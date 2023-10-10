@@ -1,0 +1,12 @@
+
+# Data manipulation and analysis
+pandas>=1.0.0
+
+# Progress bar for loops
+tqdm>=4.50.0
+
+# HTTP requests library
+requests>=2.24.0
+
+# Data visualization
+matplotlib>=3.0.0
