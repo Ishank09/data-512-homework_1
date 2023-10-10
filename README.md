@@ -287,6 +287,60 @@ In summary:
 This data structure allows you to easily access and analyze pageview statistics for different articles over time.
   
 
+
+Page View API request:
+ This API is used to retrieve pageview statistics for articles on Wikipedia. Let's break down the structure of the JSON response:
+
+```json
+{
+  "items": [
+    {
+      "project": "en.wikipedia",
+      "article": "Everything_Everywhere_All_at_Once",
+      "granularity": "monthly",
+      "timestamp": "2023090100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 223715
+    },
+    {
+      "project": "en.wikipedia",
+      "article": "Everything_Everywhere_All_at_Once",
+      "granularity": "monthly",
+      "timestamp": "2023080100",
+      "access": "all-access",
+      "agent": "user",
+      "views": 276982
+    },
+    // More items for other months...
+  ]
+}
+```
+
+Here's an explanation of the key components of this JSON response:
+
+- `"items"`: This is the key that holds an array of items, where each item represents pageview statistics for a specific article and month.
+
+- Each item in the array corresponds to a specific set of pageview statistics for an article in a given month.
+
+  - `"project"`: This key specifies the Wikimedia project, which is "en.wikipedia" for the English Wikipedia.
+
+  - `"article"`: This key provides the title of the article for which pageview statistics are reported.
+
+  - `"granularity"`: Specifies the time granularity of the data, which is typically "monthly" in this context.
+
+  - `"timestamp"`: Represents the timestamp in the format "YYYYMMDDHH," indicating the year, month, day, and hour when the pageview statistics were collected.
+
+  - `"access"`: Indicates the type of access, which can be "all-access," "mobile-app," or "desktop."
+
+  - `"agent"`: Specifies the user agent, which can be "user" for human users or other values for different types of access.
+
+  - `"views"`: Represents the number of pageviews for the article in the specified month, under the given access and agent conditions.
+
+In summary, the Pageview API response provides a structured representation of pageview statistics for articles on Wikipedia. It includes information about the article, the time period of the statistics, the type of access, and the actual number of pageviews for that combination of factors. This data is useful for tracking the popularity and viewership of articles over time.
+
+Please refer resources for documentation and data source.
+
 ### Attributions
 
   
