@@ -41,11 +41,11 @@ Before using this code, ensure you have the following prerequisites installed:
 
 - Required Python packages (you can install them using pip):
 
-- pandas
-
-- tqdm
-
-- requests
+  - pandas
+  
+  - tqdm
+  
+  - requests
 
   
 
@@ -108,27 +108,27 @@ The code assumes the following folder structure:
 
 - src ##Code directory (where this code is located)
 
-- data_acquisition.ipynb # Used to collect and store data in desired format.
-
-- data_analysis.ipynb # Used to view and analyse data in desired format.
+  - data_acquisition.ipynb # Used to collect and store data in desired format.
+  
+  - data_analysis.ipynb # Used to view and analyse data in desired format.
 
 - data ##Data directory (contains the CSV and JSON files)
 
-- thank_the_academy.AUG.2023.csv # CSV file with article information
-
-- academy_monthly_mobile_201507-202312.json # JSON file with mobile data
-
-- academy_monthly_desktop_201507-202312.json # JSON file with desktop data
-
-- academy_monthly_cumulative_201507-202312.json # JSON file with cumulative data
+  - thank_the_academy.AUG.2023.csv # CSV file with article information
+  
+  - academy_monthly_mobile_201507-202312.json # JSON file with mobile data
+  
+  - academy_monthly_desktop_201507-202312.json # JSON file with desktop data
+  
+  - academy_monthly_cumulative_201507-202312.json # JSON file with cumulative data
 
 - results ##Directory for results and analysis (not included in the code)
 
-- fewest_months_data_pageviews.png ## Maximum Average and Minimum Average - The first graph should contain time series for the articles that have the highest average monthly page requests and the lowest average monthly page requests for desktop access and mobile access. Your graph should have four lines (max desktop, min desktop, max mobile, min mobile).
-
-- max_min_average_page_requests.png: ## Top 10 Peak Page Views - The second graph should contain time series for the top 10 article pages by largest (peak) page views over the entire time by access type. You first find the month for each article that contains the highest (peak) page views, and then order the articles by these peak values. Your graph should contain the top 10 for desktop and top 10 for mobile access (20 lines).
-
-- top_10_peak_pageviews.png: ## Fewest Months of Data - The third graph should show pages that have the fewest months of available data. These will all be relatively short time series and should contain a set of the most recent academy award winners. Your graph should show the 10 articles with the fewest months of data for desktop access and the 10 articles with the fewest months of data for mobile access.
+  - fewest_months_data_pageviews.png ## Maximum Average and Minimum Average - The first graph should contain time series for the articles that have the highest average monthly page requests and the lowest average monthly page requests for desktop access and mobile access. Your graph should have four lines (max desktop, min desktop, max mobile, min mobile).
+  
+  - max_min_average_page_requests.png: ## Top 10 Peak Page Views - The second graph should contain time series for the top 10 article pages by largest (peak) page views over the entire time by access type. You first find the month for each article that contains the highest (peak) page views, and then order the articles by these peak values. Your graph should contain the top 10 for desktop and top 10 for mobile access (20 lines).
+  
+  - top_10_peak_pageviews.png: ## Fewest Months of Data - The third graph should show pages that have the fewest months of available data. These will all be relatively short time series and should contain a set of the most recent academy award winners. Your graph should show the 10 articles with the fewest months of data for desktop access and the 10 articles with the fewest months of data for mobile access.
 
   
 
@@ -147,16 +147,16 @@ The code assumes the following folder structure:
 3. Data Visualization: Three graphs were created to visualize the analysis results:
 
   
-
-- Maximum and Minimum Average Page Requests
-
   
-
-- Top 10 Peak Page Views
-
+  - Maximum and Minimum Average Page Requests
   
-
-- Articles with Fewest Months of Data
+    
+  
+  - Top 10 Peak Page Views
+  
+    
+  
+  - Articles with Fewest Months of Data
 
   
 
